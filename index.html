@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrontBox</title>
+  <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="menu-bg">
+      <nav class="menu">
+        <div class="menu-logo">
+          <a href="index.html">
+            <img src="./assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="nav">
+          <ul class="nav-list">
+
+            <li><a href="#about-us" class="nav-link">Quem Somos</a></li>
+
+            <li><a href="#courses" class="nav-link">Cursos</a></li>
+
+            <li><a href="#plans" class="nav-link">Planos</a></li>
+
+            <li><a href="#advantages" class="nav-link">Vantagens</a></li>
+
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="showMenu()"><img class="icon" src="./assets/img/menu_white_36dp.svg" alt="menu"></button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul>
+
+          <li><a href="#about-us" class="nav-link">Quem Somos</a></li>
+
+            <li><a href="#courses" class="nav-link">Cursos</a></li>
+
+            <li><a href="#plans" class="nav-link">Planos</a></li>
+
+            <li><a href="#advantages" class="nav-link">Vantagens</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 class="intro">
+      Aprenda a programar, <br />um
+      projeto por vez!
+    </h1>
+
+    <hr/>
+  </header>
+
+  <section class="about-us" id="about-us">
+    <h2 class="section-title">Quem Somos</h2>
+    <div class="body">
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a cupiditate adipisci delectus vel fugiat
+          illo qui, alias necessitatibus? Impedit id velit natus obcaecati, ipsam deleniti? Atque voluptas at iusto!
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quasi saepe dignissimos aliquid. Eligendi
+          architecto saepe pariatur sequi. Explicabo porro corrupti cupiditate perspiciatis dolorum nemo repellat
+          tempore saepe distinctio ea?
+        </p>
+      </div>
+      <div class="img">
+        <img src="./assets/img/somos.png" alt="About Us">
+      </div>
+    </div>
+    <hr />
+  </section>
+
+  <section class="courses" id="courses">
+    <h2 class="section-title">Nossos Cursos</h2>
+    <div class="body">
+      <div class="course">
+        <img src="./assets/img/ai.png" alt="Inteligência Artificial" class="course-img">
+        <h3 class="course-title">Inteligência Artificial</h3>
+        <p class="course-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, hic nobis. Assumenda aperiam dolore quasi
+          nostrum explicabo veritatis. Placeat deleniti impedit quam harum, ut neque quidem sit.
+        </p>
+      </div>
+
+      <div class="course">
+        <img src="./assets/img/front.png" alt="Frontend" class="course-img">
+        <h3 class="course-title">Frontend</h3>
+        <p class="course-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, hic nobis. Assumenda aperiam dolore quasi
+          nostrum explicabo veritatis. Placeat deleniti impedit quam harum, ut neque quidem sit.
+        </p>
+      </div>
+
+      <div class="course">
+        <img src="./assets/img/seguranca.png" alt="Segurança da Informação" class="course-img">
+        <h3 class="course-title">Segurançada Informação</h3>
+        <p class="course-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, hic nobis. Assumenda aperiam dolore quasi
+          nostrum explicabo veritatis. Placeat deleniti impedit quam harum, ut neque quidem sit.
+        </p>
+      </div>
+    </div>
+    <hr />
+  </section>
+
+  <section class="plans" id="plans">
+    <h2 class="section-title">Planos</h2>
+    <div class="body">
+      <div class="plan">
+        <h2 class="plan-title">Básico</h2>
+        <span class="plan-price"><sup>R$</sup>25</span>
+        <hr class="plan-separator" />
+        <ul class="plan-list">
+          <li class="plan-list-item">1 mês de acesso ilimitado</li>
+          <li class="plan-list-item">Acesso a todos os cursos</li>
+          <li class="plan-list-item">Certificado de conclusão</li>
+        </ul>
+        <a href="#" class="plan-btn-buy">Comprar</a>
+      </div>
+
+      <div class="plan">
+        <h2 class="plan-title">Premium</h2>
+        <span class="plan-price"><sup>R$</sup>40</span>
+        <hr class="plan-separator" />
+        <ul class="plan-list">
+          <li class="plan-list-item">1 mês de acesso ilimitado</li>
+          <li class="plan-list-item">Acesso a todos os cursos</li>
+          <li class="plan-list-item">Certificado de conclusão</li>
+          <li class="plan-list-item">Suporte</li>
+        </ul>
+        <a href="#" class="plan-btn-buy">Comprar</a>
+      </div>
+
+      <div class="plan">
+        <h2 class="plan-title">ultra</h2>
+        <span class="plan-price"><sup>R$</sup>55</span>
+        <hr class="plan-separator last" />
+        <ul class="plan-list">
+          <li class="plan-list-item last">1 mês de acesso ilimitado</li>
+          <li class="plan-list-item last">Acesso a todos os cursos</li>
+          <li class="plan-list-item last">Certificado de conclusão</li>
+          <li class="plan-list-item last">Suporte</li>
+          <li class="plan-list-item last">Downloadas aulas</li>
+        </ul>
+        <a href="#" class="plan-btn-buy last">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages" id="advantages">
+    <div class="advantage">
+      <h2 class="advantage-title">Foco em projectos</h2>
+      <p class="advantage-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, earum dolore molestiae nesciunt repellendus.
+      </p>
+    </div>
+
+    <div class="advantage">
+      <h2 class="advantage-title">Portifólio incrível</h2>
+      <p class="advantage-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, earum dolore molestiae nesciunt repellendus.
+      </p>
+    </div>
+
+    <div class="advantage">
+      <h2 class="advantage-title">Aprenda fazendo</h2>
+      <p class="advantage-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, earum dolore molestiae nesciunt repellendus.
+      </p>
+    </div>
+    
+    <div class="advantage">
+      <h2 class="advantage-title">Para todas as idades</h2>
+      <p class="advantage-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, earum dolore molestiae nesciunt repellendus.
+      </p>
+    </div>
+
+    <div class="advantage">
+      <h2 class="advantage-title">Atualizado</h2>
+      <p class="advantage-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, earum dolore molestiae nesciunt repellendus.
+      </p>
+    </div>
+
+    <div class="advantage">
+      <h2 class="advantage-title">Comece hoje</h2>
+      <p class="advantage-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, earum dolore molestiae nesciunt repellendus.
+      </p>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-info">
+        <h2 class="newsletter-info-title">Newsletter</h2>
+        <p class="newsletter-info-description">Assine e fique dentro da novidades</p>
+      </div>
+      <form action="" class="newsletter-form">
+        <input type="text" class="newsletter-form-input" placeholder="Seu E-mail">
+        <button type="submit" class="newsletter-form-submit">Assinar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-copyright">Este é um projeto que servirá de maquete para o vosso projeto final</p>
+
+    <a href="index.html">
+      <img src="./assets/img/logo.png" alt="Fronbox" class="footer-logo">
+    </a>
+  </footer>
+
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

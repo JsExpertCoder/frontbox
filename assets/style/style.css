@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --letter-type: "Nunito", Helvetica, arial, sans-serif;
+  --dark-green: #049A40;
+  --light-green: #0BF96A;
+  --dark-pink: #E10BF9;
+  --light-pink: #F3A0Fd;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--letter-type);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black)
+}
+
+.menu-bg {
+  background-color: var(--light-green);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-logo {
+  margin: 10px;
+}
+
+.menu-logo h1 {
+  color: var(--white);
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav .nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  padding: 20px 10px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+h1.intro {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+hr {
+  border: none;
+  background-color: var(--dark-pink);
+  height: 2px;
+  width: 140px;
+  margin: 20px auto;
+}
+
+p {
+  line-height: 21.82px;
+  padding: 0 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+/************************* About  Us ************************* */
+
+.about-us {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.about-us .body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-us .text {
+  flex: 6 1 160px
+}
+
+.about-us .img {
+  flex: 1 1 350px;
+}
+
+
+
+/************************* Our Courses ************************* */
+
+.courses .body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses .course {
+  width: 200px;
+  margin: 0 20px
+}
+
+.course .course-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0 5px 0;
+}
+
+/************************* plans ************************* */
+
+.plans .body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto
+}
+.plans {
+  background-color: var(--light-pink);
+}
+.plans .plan {
+  width: 290px;
+  margin: 10px;
+  border: 2px solid var(--light-green)
+}
+
+/* here */
+.plans .plan .plan-title {
+  font-size: 3rem;
+  margin: 10px auto;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* here */
+.plans .plan .plan-price {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.plans .plan .plan-price sup {
+  font-size: 1.5rem;
+  top: -20px;
+}
+
+.plans .plan .plan-separator {
+  background-color: var(--light-green);
+  width: 20px;
+  margin: 5px auto;
+}
+.plans .plan .plan-separator.last {
+  background-color: var(--dark-pink);
+}
+
+.plans .plan .plan-list {
+  max-width: 195px;
+  margin: 0 auto;
+}
+
+.plans .plan .plan-list .plan-list-item {
+  margin: 10px 0;
+  font-family: italic;
+}
+
+.plans .plan .plan-list .plan-list-item::before {
+  content: "";
+  display: flex;
+  width: 5px;
+  height: 5px;
+  background-color: var(--light-green);
+  border-radius: 5px;
+  margin-left: -15px;
+}
+.plans .plan .plan-list .plan-list-item.last::before {
+  background-color: var(--dark-pink);
+}
+
+.plans .plan .plan-btn-buy {
+  display: block;
+  max-width: 180px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1px auto;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid var(--light-green);
+}
+.plans .plan .plan-btn-buy.last {
+  border: 2px solid var(--dark-pink)
+}
+
+.plans .plan:last-child {
+  background-color: var(--light-green);
+}
+
+/************************* Advantages ************************* */
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.advantages .advantage {
+  max-width: 240px;
+  margin: 10px;
+}
+
+.advantages .advantage .advantage-title {
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.advantages .advantage .advantage-title::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.advantages .advantage:nth-of-type(3n+1) .advantage-title::before {
+  background-color: var(--light-green);
+}
+
+.advantages .advantage:nth-of-type(3n+2) .advantage-title::before {
+  background-color: var(--dark-pink);
+}
+
+.advantages .advantage:nth-of-type(3n+3) .advantage-title::before {
+  background-color: var(--dark-green);
+}
+
+/************************* Newsletter ************************* */
+
+.newsletter {
+  background-color: var(--light-green);
+}
+
+.newsletter .newsletter-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.newsletter .newsletter-container .newsletter-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 260px;
+  padding-left: 10px;
+}
+
+.newsletter .newsletter-container .newsletter-info .newsletter-info-title {
+  font-size: 2.62rem;
+  font-weight: bold;
+}
+
+.newsletter .newsletter-container .newsletter-info .newsletter-info-description {
+  font-style: italic;
+}
+
+.newsletter .newsletter-container .newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2 1 260px
+}
+
+.newsletter .newsletter-container .newsletter-form .newsletter-form-input {
+  flex: 3 1 260px;
+  font-style: 1.5rem;
+  width: 325px;
+  color: var(--black);
+  font-style: italic;
+  font-family: var(--letter-type);
+  font-size: 1rem;
+  border: 10px solid var(--dark-pink);
+  padding: 10px;
+  margin: 0;
+  border-radius: 0px;
+}
+
+.newsletter .newsletter-container .newsletter-form .newsletter-form-submit {
+  width: 192px;
+  font-family: var(--letter-type);
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--dark-pink);
+  color: var(--black);
+  cursor: pointer;
+  border: none;
+  padding: 15px
+}
+
+footer {
+  background-color: var(--light-pink);
+  display: flex;
+  justify-content: space-around;
+  padding: 55px calc((100% - 960px) / 2);
+}
+footer .footer-copyright, footer .footer-logo {
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+@media screen and (max-width: 730px) {
+
+  /* não existem */
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+  .login-button {
+    display: none;
+  }
+  .mobile-menu .login-buton {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .mobile-menu .login-buton button {
+    width: 100%;
+  }
+  /* existem */
+  .open {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-item {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+}
