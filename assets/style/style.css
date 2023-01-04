@@ -331,8 +331,9 @@ ul {
   border-radius: 0px;
 }
 
-.newsletter .newsletter-container .newsletter-form .newsletter-form-input:placeholder {
+.newsletter .newsletter-container .newsletter-form .newsletter-form-input::placeholder {
   font-weight: bold;
+ font-size:1.2rem
 }
 
 .newsletter .newsletter-container .newsletter-form .newsletter-form-submit {
