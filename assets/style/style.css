@@ -331,6 +331,10 @@ ul {
   border-radius: 0px;
 }
 
+.newsletter .newsletter-container .newsletter-form .newsletter-form-input:placeholder {
+  font-weight: bold;
+}
+
 .newsletter .newsletter-container .newsletter-form .newsletter-form-submit {
   width: 192px;
   font-family: var(--letter-type);
